@@ -2,7 +2,7 @@
 %! Date = 5/16/2023
 
 % Preamble
-\documentclass[11pt]{article}
+\documentclass[11pt]{elsarticle}
 
 % Packages
 \usepackage{amsmath}
@@ -10,7 +10,22 @@
 \usepackage{amssymb}
 
 % Document
+\title{Getting started with Latex for writing journal papers}
+\author[1]{Sunil, Bhandari \corref{cor1} }
+\ead{sunil.bhandari@maine.edu}
+\affiliation[1]{organization={University of Maine},
+    addressline={35 Flagstaff Road, ASCC},
+    postcode={04469},
+    city={Orono},
+    country={Maine}}
+
+\begin{abstract}
+    The document has introduction, methodology, results and conclusions. IMRaD format allows for Discussion but not Conclusions.
+    \end{abstract}
 \begin{document}
+    \maketitle
+
+
     \include{Chapter1}
     \include{Chapter2}
     \include{Chapter3}
@@ -21,6 +36,7 @@
 
 
     \bibliography{/Users/sunilbhandari/CLionProjects/latex_test_project0/src/main}
+    \biboptions{longnamesfirst,angle,semicolon}
     \bibliographystyle{plain}
 
 \end{document}
